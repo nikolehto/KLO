@@ -1,4 +1,20 @@
-{ "points" : [
- {"name": "Valot", "value": "1", "info": "Olohuoneen valo", "type" : "1", "coordinate": {"x" : "0", "y" : "0"}, "image":{"on" : "img/light_on.png", "off" : "img/light_off.png"}},
- {"name": "Pistoke", "value": "1", "info": "Olohuoneen pistoke", "type" : "coordinate": {"x" : "0", "y" : "0"}, "image":{"on" : "img/socket_on.png", "off" : "img/socket_off.png"}}
+{"points":[
+ {
+ "name": "Valot",
+ "value": "1",
+ "info": "Olohuoneen valo",
+ "type": "1", 
+ "coordinate": {"x" : "0", "y" : "0"}, 
+ "image": 
+		{"on" : "img/light_on.png",
+		"off" : "img/light_off.png"}},
+ 
+ {"name": "Pistoke",
+ "value": "1", 
+ "info": "Olohuoneen pistoke", 
+ "type" : "3",
+ "coordinate": {"x" : "0", "y" : "0"},
+ "image":
+		{"on" : "img/socket_on.png", 
+		"off" : "img/socket_off.png"}}
 ]}

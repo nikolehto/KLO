@@ -12,9 +12,20 @@
          <td><div id = "state1">no data</div></td></tr>
       </table>
 	  
-
+	 <style>
+	img {
+		border-radius: 8px;
+		max-width: 100%;
+		height: auto;
+		}
+	</style>
+	  
+	  <img src="img/house.png" alt="ground plan">
+	  <img src="img/light_off.png" alt="light_state">
+	  
+	  
       <div class = "central">
-         <button type = "button" onclick = "loadJSON()">Update Details </button>
+         <butt	on type = "button" onclick = "loadJSON()">Update Details </button>
       </div>
 	  
 	  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000">
