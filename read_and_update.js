@@ -1,6 +1,6 @@
 loadJSON();
-setInterval(loadJSON, 2000);
-
+setInterval(loadJSON, 2000); 
+// Change
  function loadJSON(){
 	var data_file = "data.json";
 	var http_request;
