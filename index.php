@@ -18,10 +18,14 @@
 		max-width: 100%;
 		height: auto;
 		}
+	canvas {
+		border:1px solid #d3d3d3;
+		background-color: #f1f1f1;
+		}
 	</style>
 	  
 	  <img src="img/house.png" alt="ground plan">
-	  <img src="img/light_off.png" alt="light_state">
+	  <img id="Object1" src="img/light_off.png" alt="light_state">
 	  
 	  
       <div class = "central">

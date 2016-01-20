@@ -1,7 +1,7 @@
 {"points":[
  {
  "name": "Valot",
- "value": "1",
+ "value": "0",
  "info": "Olohuoneen valo",
  "type": "1", 
  "coordinate": {"x" : "0", "y" : "0"}, 

@@ -28,6 +28,15 @@ setInterval(loadJSON, 2000);
 		  document.getElementById("point1").innerHTML = name;
 		  document.getElementById("state1").innerHTML = value;
 		 
+		  var image = document.getElementById('Object1');
+		  if (value == 1) {
+			image.src = "img/light_on.png"
+		  }
+		  else {
+		    image.src = "img/light_off.png"
+		  }
+		 
+		 
 		  switch(type) {
 			case "1": 
 				if (value === "1") {
@@ -44,6 +53,16 @@ setInterval(loadJSON, 2000);
 		  
 	   }
 	}
+	
+	/*function changeImage(object, state) {
+    var image = document.getElementById('Object1');
+    if () {
+        image.src = "pic_bulboff.gif";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+	
+	}*/
 	
 	http_request.open("POST", data_file, true);
 	http_request.send();
