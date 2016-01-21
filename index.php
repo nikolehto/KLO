@@ -5,7 +5,7 @@
    </head>
 	
    <body>
-      <h1>States</h1>
+      <h1>THIS IS TEH HEADIN </h1>
 		
       <table class = "src">
          <tr><td><div id = "point1">no data</div></td>
@@ -13,15 +13,19 @@
       </table>
 	  
 	 <style>
+	h1 {
+		color: orange;
+		text-align: center;
+	}
 	img {
 		border-radius: 8px;
 		max-width: 100%;
-		height: auto;
-		}
+		margin: auto;
+	}
 	canvas {
 		border:1px solid #d3d3d3;
 		background-color: #f1f1f1;
-		}
+	}
 	</style>
 	  
 	  <img src="img/house.png" alt="ground plan">
@@ -35,7 +39,14 @@
 	  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000">
 	  </canvas>
 	  
-	  <?php  
+	<?php  
+	$string = file_get_contents("new_data.json");
+	$data_json = json_decode($string, true);
+
+	foreach ($data_json as $device_name => $device_value) {
+		echo $device_value;
+	}
+	
 	  //$servername = "localhost";
 	  //$username = "root";
 	  //$password = "secret";
