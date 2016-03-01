@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-   <head>	
+   <head>
       <title>KLO project</title>
    </head>
 	
    <body>
-      <h1>THIS IS TEH HEADIN </h1>
+      <h1>HEADIN </h1>
 		
       <table class = "src">
-         <tr><td><div id = "point1">no data</div></td>
-         <td><div id = "state1">no data</div></td></tr>
+         <tr><td><div id = "light100">no data</div></td>
+         <td><div id = "socket100">data</div></td></tr>
       </table>
 	  
 	 <style>
@@ -40,7 +40,7 @@
 	  </canvas>
 	  
 	<?php  
-	$string = file_get_contents("new_data.json");
+	$string = file_get_contents("data.json");
 	$data_json = json_decode($string, true);
 
 	foreach ($data_json as $device_name => $device_value) {
@@ -66,7 +66,8 @@
 	  
 	  ?>
 	  
-      <script src = "read_and_update.js"></script>
+   <script src = "read_and_update.js"></script>
+   
    </body>
 		
 </html>
