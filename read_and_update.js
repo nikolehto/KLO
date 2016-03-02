@@ -1,6 +1,7 @@
 loadJSON();
 setInterval(loadJSON, 2000); 
 
+
 function loadJSON(){
 	var data_file = "data.json";
 	var http_request;
@@ -21,7 +22,7 @@ function loadJSON(){
 			for (var key in dict) {
 				//if (dict.hasOwnProperty(key)) {
 					//alert("Key is " + key + ", value is" + dict[key]);
-					document.getElementById(key).innerHTML = dict[key];
+					document.getElementById(key).innerHTML = dict[key]; // if element found, if not do somtin
 				//}
 			}
 

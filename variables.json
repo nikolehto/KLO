@@ -1,20 +1,25 @@
-{"points":[
- {
- "name": "Valot",
- "value": "0",
- "info": "Olohuoneen valo",
- "type": "1", 
- "coordinate": {"x" : "0", "y" : "0"}, 
- "image": 
-		{"on" : "img/light_on.png",
-		"off" : "img/light_off.png"}},
- 
- {"name": "Pistoke",
- "value": "1", 
- "info": "Olohuoneen pistoke", 
- "type" : "3",
- "coordinate": {"x" : "0", "y" : "0"},
- "image":
-		{"on" : "img/socket_on.png", 
-		"off" : "img/socket_off.png"}}
-]}
+{
+	"light1010":
+	{
+		 "name": "Valot",
+		 "value": "0",
+		 "info": "Olohuoneen valo",
+		 "type": "1", 
+		 "coordinate": {"x" : "0", "y" : "0"}, 
+		 "image": 
+				{"on" : "img/light_on.png",
+				"off" : "img/light_off.png"}
+	},
+	 
+	 "socket100":
+	 {
+		 "name": "Pistoke",
+		 "value": "1", 
+		 "info": "Olohuoneen pistoke", 
+		 "type" : "3",
+		 "coordinate": {"x" : "0", "y" : "0"},
+		 "image":
+				{"on" : "img/socket_on.png", 
+				"off" : "img/socket_off.png"}
+	}
+}
