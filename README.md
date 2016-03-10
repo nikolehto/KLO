@@ -2,6 +2,9 @@
 Käyttöliittymäohjelmointi projekti
 Kodinohjausjärjestelmän visualisointi
 
+![](docs/screenshot.png)
+
+
 1. Taustalle voi ladata pohjapiirrustuksen, tai muun käyttäjän valitseman kuvan
 2. Jokaista ohjattavaa laitetta (ja laitteen tilaa) vastaa kuvake. Ohjausten tila luetaan data.json tiedostosta.
 3. Sijoitetaan jokaista laitetta vastaava kuva oikeaan sijaintiin (variables.json sisältää tiedon kuvasta ja tilasta)
