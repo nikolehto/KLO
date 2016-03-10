@@ -1,4 +1,6 @@
-{ "points" : [
- {"name": "Valot", "value": "1", "info": "Olohuoneen valo", "type" : "1", "x" : "0", "y" : "0"},
- {"name": "Pistoke", "value": "1", "info": "Olohuoneen pistoke", "type" : "3", "x" : "0", "y" : "0"}
-]}
+{
+ "light1": 0,
+ "light2": 1,
+ "light3": 0,
+ "light4": 1
+}
