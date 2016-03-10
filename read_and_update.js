@@ -1,8 +1,30 @@
 loadJSON();
 setInterval(loadJSON, 2000); 
+$( ".light" ).draggable({ containment: "#house", scroll: false });
+$( ".light" ).draggable( 'disable' );
+		
+function draggableChange() {
+	var elem = document.getElementById("dragButton");
+	
+	if (elem.value=="Salli valojen liikutus") {
+		elem.value = "Estä valojen liikutus";
+		$( ".light" ).draggable( 'enable' );
+	}
+	
+    else { 
+		elem.value = "Salli valojen liikutus";
+		$( ".light" ).draggable( 'disable' );
+	}
+	}
 
+function updatePosition(object) {
+	var position = object.position();
+		
+		//$( "p:first" ).text( "left: " + position.left + ", top: " + position.top );
+		//return position;
+	}
 
-function loadJSON(){
+function loadJSON(){ // http://www.w3schools.com/ajax/ajax_examples.asp
 	var data_file = "data.json";
 	var http_request;
 	if (window.XMLHttpRequest) {
@@ -20,51 +42,43 @@ function loadJSON(){
 			var dict = JSON.parse(http_request.responseText);
 			
 			for (var key in dict) {
-				//if (dict.hasOwnProperty(key)) {
-					//alert("Key is " + key + ", value is" + dict[key]);
-					document.getElementById(key).innerHTML = dict[key]; // if element found, if not do somtin
-				//}
+				//document.getElementById(key).innerHTML = dict[key];
+				var value = dict[key];
+				var image = document.getElementById(key);
+	
+				// hard coded source, look comment -> 
+				if (value == 1) {
+					image.src = "img/bulb_on.png"; // If different types of objects wanted. This must have image position from variables.json  (out of focus ) 
+				}
+				else {
+					image.src = "img/bulb_off.png";
+				}
 			}
-
-			var image = document.getElementById('Object1');
-			
-			//if (value == 1) {
-				image.src = "img/light_on.png"
-			//}
-			//else {
-			//	image.src = "img/light_off.png"
-			//}
-			/*
-			switch(type) {
-				case "1": 
-					if (value === "1") {
-						var c = document.getElementById("myCanvas");
-						var ctx = c.getContext("2d");
-						ctx.fillStyle = "#FF0000";
-						ctx.fillRect(0,0,150,75);
-					}
-					break;
-				default:
-					break;
-			}
-			*/
-
 		}
-	//	else {
-	//		getElementById("a").innerHTML = "Vailed"
-		
-	//	}
 	}
 
-	//function changeImage(object, state) {
-	//var image = document.getElementById('Object1');
-	//if () {
-	//	image.src = "pic_bulboff.gif";
-	//} else {
-	//	image.src = "pic_bulbon.gif";
-	//}
 
 	http_request.open("POST", data_file, true);
 	http_request.send();
  }
 
+$(function(){ // http://stackoverflow.com/questions/19392453/jquery-show-hide-sliding-panel-from-left-side
+	$('.slider-arrow').click(function(){
+		if($(this).hasClass('show')){
+		$( ".slider-arrow, .panel" ).animate({
+		  right: "+=200"
+		  }, 700, function() {
+			// Animation complete.
+		  });
+		  $(this).html('&raquo;').removeClass('show').addClass('hide');
+		}
+		else {   
+		$( ".slider-arrow, .panel" ).animate({
+		  right: "-=200"
+		  }, 700, function() {
+			// Animation complete.
+		  });
+		  $(this).html('&laquo;').removeClass('hide').addClass('show');    
+		}
+	});
+});

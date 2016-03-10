@@ -1,4 +1,6 @@
 {
- "light100": 1,
- "socket100": 1
+ "light1": 0,
+ "light2": 1,
+ "light3": 0,
+ "light4": 1
 }

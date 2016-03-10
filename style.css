@@ -1,4 +1,68 @@
-canvas {
-border:1px solid #000000;
-background-color: #f1f1f1;
+body, html {
+	height:100%;   
+	padding: 0;
+	margin: 0;
+	background-color: #1a1a1a;
 }
+
+body {overflow: hidden;}
+
+#house {
+	height:80%; 
+	padding: 0px;
+	overflow:hidden;
+	background-image: url("img/house.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+h1 {
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	background-color:#f6a828;
+}
+
+.light {
+	position: absolute;
+}
+
+.light p {
+	display: none;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.light:hover p {
+	display: block;
+}
+
+.panel {
+	width:200px;
+	float:right;
+	height:300px;
+	background:#d9dada;
+	position:relative;
+	right:-200px;
+}
+.slider-arrow {
+	padding:5px;
+	width:10px;
+	float:right;
+	background:#d9dada;
+	font:400 12px Arial, Helvetica, sans-serif;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	right:-200px;
+}
+
+.panel p {
+	position: relative;
+	left : 20px;
+	}
+	
+.panel input {position: relative;
+	left: 10px;
+	top: 20px;}
